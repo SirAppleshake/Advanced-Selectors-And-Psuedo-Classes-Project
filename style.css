@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0D1117;
+    color: bisque;
+}
+
+h1 {
+    color: aqua;
+}
+
+/*Attribute Selector*/
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+/*Child Selector*/
+ul>li {
+    font-weight: bold;
+
+}
+
+/*Hover psuedo class*/
+ul>li:hover {
+    color: blueviolet;
+}
+
+/* Sibling Selector*/
+h1+p {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+/* nth child */
+ul>li:nth-child(3) {
+    background-color: rgb(73, 73, 73);
+}
+
+/* :not(selector) psuedo class*/
+p:not(:first-of-type) {
+    text-decoration: wavy;
+}
+
+/* ::before pseudo element */
+ul li:before {
+    content: "✨";
+}
+
+/* after pseudo element */
+a:after {
+    content: "⌨";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 30px;
+    color: blanchedalmond;
+}
